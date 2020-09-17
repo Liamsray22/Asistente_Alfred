@@ -160,42 +160,6 @@ def verAnime():
     wb.open_new_tab('https://animeflash.xyz/')
 
 
-#Funcionalidad: Abrir mis juegos o la carpeta
-
-def abrirJuegos():
-    pregunta = oido.listen('Quieres jugar algo en específico?')
-    if pregunta == 'no' or pregunta == 'que no':
-        bot.Dice('entonces abriré su carpeta de juegos, señor')
-        funcionesHotkey('win','d')
-        auto.moveTo(55, 165)
-        auto.doubleClick()
-
-    elif pregunta == 'si' or pregunta == 'sí' or pregunta == 'que sí' or pregunta == 'qué sí':
-        juego = oido.listen('Que quieres jugar?')
-        if juego == 'mangos' or juego == 'traicion' or juego == 'traición':
-            sub.Popen('C:/Users/Liam/Downloads/Among us 2020.9.1-PiviGames.blog/Among Us.exe', shell=True)
-        elif juego == 'borderlands':
-            sub.Popen('C:/Games/Borderlands GOTY/Binaries/Borderlands.exe', shell=True)
-        elif juego == 'lego' or juego == 'lego batman' or juego == 'batman':
-            sub.Popen('C:/Games/LEGO Batman The Videogame/LEGOBatman.exe', shell=True)
-        elif juego == 'brawlhalla' or juego == 'golpes' or juego == 'golpe':
-            sub.Popen('C:/Users/Liam/Desktop/G4ME5/Brawlhalla.url', shell=True)
-        elif juego == 'fallout' or juego == 'falo':
-            sub.Popen('C:/Program Files (x86)/VictorVal/Fallout 3 Gold Repack/FalloutLauncher.exe', shell=True)
-    else:
-        print(pregunta)
-        bot.Dice('hay panico')
-
-def ponerCredenciales():
-    auto.moveTo(500, 410)
-    auto.click()
-    auto.write('20186308')
-    sleep(0.5)
-    auto.moveTo(500, 460)
-    auto.click()
-    auto.write('20186308')
-    auto.press('enter')
-
 
 #Funcionalidad: Cerrar
 def terminarALFRED():

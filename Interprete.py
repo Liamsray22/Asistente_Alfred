@@ -78,13 +78,9 @@ def interpretar(comando_de_audio):
                                            'una película'])
     anime = sinonimar(comando_de_audio,['ver anime','pon anime','un anime','veamos anime','poner anime','ponte anime'])
     historial = sinonimar(comando_de_audio,['abrir historial','el historial','un historial'])
-    jugar = sinonimar(comando_de_audio,['quiero jugar','abre juegos','abreme los juegos','ábreme los juegos','abre los juegos',
-                                        'de jugar','apetece jugar','entra a juegos','de juegos'])
     escritorio = sinonimar(comando_de_audio,['escritorio','ve al escritorio','al escritorio','abrir escritorio'])
     windows = sinonimar(comando_de_audio,['windows','win','windel','window'])
     cerrarProg = sinonimar(comando_de_audio,['cerrar programa','cierra programa','cierra el programa','ciérralo','cierralo'])
-    credenciales = sinonimar(comando_de_audio,['pon mis credenciales','las credenciales','mis datos','los datos','lo dato','lodato',
-                                               'lobato'])
     alfred = sinonimar(comando_de_audio,['alfred','alfredo','alfre'])
 
 
@@ -130,14 +126,10 @@ def interpretar(comando_de_audio):
         fn.verAnime()
     elif historial:
         fn.funcionesHotkey('ctrl','h')
-    elif jugar:
-        fn.abrirJuegos()
     elif escritorio:
         fn.funcionesHotkey('win','d')
     elif windows:
         fn.funcionesPress('win')
-    elif credenciales:
-        fn.ponerCredenciales()
     elif alfred:
         fn.llamarAlfred()
 
