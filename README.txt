@@ -2,8 +2,10 @@ Bot Asistente
 
 -Modo de Uso
 Inicia el archivo Alfred.bat
+No presione ninguna tecla
 Espere a que diga "Escuchando..." (o que el icono de microfono este la parte de iconos en su PC)
 dele una orden
+**No presione nada aun si tarda un poco en iniciar**
 
 -Ordenes que puede realizar
 ***ABRE YOUTUBE***
